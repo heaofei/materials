@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="AppNoActionBarTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:textColor">#de000000</item>
+        <!--<item name="checkbox_checked_color">@color/sun_flower</item>-->
+        <!--<item name="circular_progress_color">@color/brand</item>-->
+        <!--<item name="fab_colorPressed">@color/orange</item>-->
+        <!--<item name="fab_colorNormal">@color/sun_flower</item>-->
+        <!--<item name="floating_edit_text_highlighted_color">@color/sun_flower</item>-->
+        <!--<item name="mdActiveIndicator">@drawable/menu_arrow_start</item>-->
+        <!--<item name="progressIndeterminate">true</item>-->
+        <!--<item name="barColor">@color/brand</item>-->
+        <item name="searchViewStyle">@style/MySearchViewStyle</item>
+        <item name="colorPrimary">@color/brand</item>
+        <item name="colorPrimaryDark">@color/brand_dark</item>
+        <item name="colorAccent">@color/sun_flower</item>
+    </style>
+    <style name="AppNoActionBarTheme.Fifthary" parent="@style/AppNoActionBarTheme">
+        <!--<item name="circular_progress_color">@color/concrete</item>-->
+        <!--<item name="barColor">@color/concrete</item>-->
+        <item name="colorPrimary">@color/concrete</item>
+        <item name="colorPrimaryDark">@color/asbestos</item>
+        <item name="colorAccent">@color/sun_flower</item>
+    </style>
+
+    <style name="MySearchViewStyle" parent="@style/Widget.AppCompat.SearchView" />
+    <style name="Widget.ProgressBar.PullToRefresh" parent="SmoothProgressBar">
+        <item name="android:minHeight">@dimen/ptr_progress_bar_stroke_width</item>
+    </style>
+</resources>

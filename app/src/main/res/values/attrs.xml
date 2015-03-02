@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="rippleColor" format="color" localization="suggested" />
+    <attr name="rippleDimension" format="dimension" localization="suggested" />
+    <attr name="rippleOverlay" format="boolean" localization="suggested" />
+    <attr name="rippleAlpha" format="float" localization="suggested" />
+    <attr name="rippleDuration" format="integer" localization="suggested" />
+    <attr name="rippleFadeDuration" format="integer" localization="suggested" />
+    <attr name="rippleHover" format="boolean" localization="suggested" />
+    <attr name="rippleBackground" format="color" localization="suggested" />
+    <attr name="rippleDelayClick" format="boolean" localization="suggested" />
+    <attr name="ripplePersistent" format="boolean" localization="suggested" />
+    <attr name="rippleInAdapter" format="boolean" localization="suggested" />
+    <declare-styleable name="PullToRefreshView">
+
+        <!-- The class to use as a View's View Delegate. Can be relative path from app's package name -->
+        <attr name="ptrViewDelegateClass" format="reference|string" />
+
+    </declare-styleable>
+
+    <!-- The attribute to set in your Application/Activity theme to reference your custom theme -->
+    <attr name="ptrHeaderStyle" format="reference" />
+
+    <declare-styleable name="PullToRefreshHeader">
+
+        <!-- A drawable to use as the background of the Header View -->
+        <attr name="ptrHeaderBackground" format="reference|color" />
+
+        <!-- The height of the Header View -->
+        <attr name="ptrHeaderHeight" format="reference|dimension" />
+
+        <!-- The Text Appearance of the Header View's Title text -->
+        <attr name="ptrHeaderTitleTextAppearance" format="reference" />
+
+        <!-- The color that the Progress Bar should be tinted with -->
+        <attr name="ptrProgressBarColor" format="reference|color" />
+
+        <!-- The style of the Progress Bar -->
+        <attr name="ptrProgressBarStyle">
+            <flag name="inside" value="0x0" />
+            <flag name="outside" value="0x1" />
+        </attr>
+
+        <!-- The height of the Progress Bar -->
+        <attr name="ptrProgressBarHeight" format="reference|dimension" />
+
+        <!-- Text to show to prompt the user is pull (or keep pulling) -->
+        <attr name="ptrPullText" format="reference|string" />
+
+        <!-- Text to show to tell the user that a refresh is currently in progress -->
+        <attr name="ptrRefreshingText" format="reference|string" />
+
+        <!-- Text to show to tell the user has scrolled enough to refresh -->
+        <attr name="ptrReleaseText" format="reference|string" />
+
+    </declare-styleable>
+</resources>

@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#009688"
+        />
+
+    <it.neokree.materialtabs.MaterialTabHost
+        android:id="@+id/tabHost"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:iconColor="#FFFFFF"
+        app:primaryColor="#009688"
+        android:layout_below="@+id/toolbar"
+        app:accentColor="#ffc400"
+        app:hasIcons="true"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tabHost" />
+
+    <View android:background="@drawable/overlay_shadow_bottom" android:layout_width="fill_parent" android:layout_height="4.0dip" android:layout_marginTop="48.0dip" android:layout_below="@id/toolbar" />
+    <com.getbase.floatingactionbutton.AddFloatingActionButton
+        android:id="@+id/main_random"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8.0dip"
+        android:layout_marginBottom="8.0dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        fab:fab_plusIconColor="#ffffffff"
+        fab:fab_colorPressed="@color/concrete"
+        fab:fab_colorNormal="@color/silver"
+        xmlns:fab="http://schemas.android.com/apk/res-auto" />
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/main_ask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8.0dip"
+        android:layout_marginBottom="8.0dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        fab:fab_icon="@drawable/ic_action_help"
+        xmlns:fab="http://schemas.android.com/apk/res-auto" />
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/main_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8.0dip"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        fab:fab_icon="@drawable/ic_person_white_24dp"
+        xmlns:fab="http://schemas.android.com/apk/res-auto" />
+</RelativeLayout>

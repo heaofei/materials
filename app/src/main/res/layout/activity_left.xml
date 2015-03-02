@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/black_54_bold" android:paddingBottom="@dimen/lollipop_padding_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/menu_user" android:background="@drawable/bg_clickable_white" android:paddingLeft="8.0dip" android:paddingTop="32.0dip" android:paddingRight="8.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="200.0dip">
+                <com.makeramen.RoundedImageView android:layout_width="136.0dip" android:layout_height="136.0dip" android:layout_marginTop="2.0dip" android:src="#22000000" android:layout_centerHorizontal="true" app:riv_corner_radius="68.0dip" xmlns:app="http://schemas.android.com/apk/res-auto" />
+                <com.makeramen.RoundedImageView android:layout_width="136.0dip" android:layout_height="136.0dip" android:src="#ffffffff" android:layout_centerHorizontal="true" app:riv_corner_radius="68.0dip" app:riv_border_width="1.0dip" app:riv_border_color="#11000000" xmlns:app="http://schemas.android.com/apk/res-auto" />
+                <com.makeramen.RoundedImageView android:id="@+id/avatar_lg" android:padding="4.0dip" android:layout_width="136.0dip" android:layout_height="136.0dip" android:layout_centerHorizontal="true" app:riv_corner_radius="68.0dip" xmlns:app="http://schemas.android.com/apk/res-auto" />
+                <ImageView android:id="@+id/message_like_button" android:background="@drawable/bg_message_like" android:paddingLeft="10.0dip" android:paddingTop="12.0dip" android:paddingRight="10.0dip" android:paddingBottom="8.0dip" android:layout_width="56.0dip" android:layout_height="56.0dip" android:layout_marginLeft="-12.0dip" android:layout_marginBottom="-10.0dip" android:src="@drawable/ic_favorite_white_36dp" android:layout_alignLeft="@+id/avatar_lg" android:layout_alignBottom="@+id/avatar_lg" />
+                <ImageView android:id="@+id/love_button" android:background="@drawable/bg_love" android:paddingLeft="6.0dip" android:paddingTop="8.0dip" android:paddingRight="6.0dip" android:paddingBottom="4.0dip" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="-16.0dip" android:layout_marginRight="-12.0dip" android:src="@drawable/ic_favorite_white_24dp" android:scaleType="center" android:layout_alignTop="@+id/avatar_lg" android:layout_alignRight="@+id/avatar_lg" />
+                <com.readystatesoftware.viewbadger.BadgeView android:textColor="#ffffffff" android:id="@+id/menu_message_answer_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="10.0dip" android:src="@color/white_12" />
+            <com.balysv.materialripple.MaterialRippleLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:rippleColor="#ffffffff" app:rippleDelayClick="false">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/menu_todo" android:background="@drawable/bg_clickable_white" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip">
+                    <ImageView android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/ic_action_help" />
+                    <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:text="问题" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/text_light_thirdary" android:id="@+id/menu_todo_total" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:layout_weight="1.0" />
+                    <com.readystatesoftware.viewbadger.BadgeView android:textColor="#ffffffff" android:id="@+id/menu_todo_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" />
+                </LinearLayout>
+            </com.balysv.materialripple.MaterialRippleLayout>
+            <com.balysv.materialripple.MaterialRippleLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:rippleColor="#ffffffff" app:rippleDelayClick="false">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/menu_timeline" android:background="@drawable/bg_clickable_white" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip">
+                    <ImageView android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/ic_done_all_white_24dp" />
+                    <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:layout_marginRight="4.0dip" android:text="回答" android:layout_weight="1.0" />
+                    <com.readystatesoftware.viewbadger.BadgeView android:textColor="#ffffffff" android:id="@+id/menu_timeline_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" />
+                </LinearLayout>
+            </com.balysv.materialripple.MaterialRippleLayout>
+            <com.balysv.materialripple.MaterialRippleLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:rippleColor="#ffffffff" app:rippleDelayClick="false">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/menu_relationship" android:background="@drawable/bg_clickable_white" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip">
+                    <ImageView android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/ic_group_white_24dp" />
+                    <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="32.0dip" android:layout_marginRight="4.0dip" android:text="好友" android:layout_weight="1.0" />
+                </LinearLayout>
+            </com.balysv.materialripple.MaterialRippleLayout>
+            <ImageView android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="18.0dip" android:src="@color/white_12" />
+            <com.balysv.materialripple.MaterialRippleLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:rippleColor="#ffffffff" app:rippleDelayClick="false">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/menu_settings" android:background="@drawable/bg_clickable_white" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:text="设置" android:layout_weight="1.0" />
+                    <com.readystatesoftware.viewbadger.BadgeView android:textColor="#ffffffff" android:id="@+id/menu_settings_new" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="NEW" />
+                </LinearLayout>
+            </com.balysv.materialripple.MaterialRippleLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="48.0dip">
+                <com.dd.processbutton.iml.SubmitProcessButton android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="left" android:id="@+id/menu_exit" android:paddingLeft="16.0dip" android:paddingTop="13.0dip" android:layout_width="fill_parent" android:layout_height="51.0dip" android:text="退出" app:pb_colorPressed="#ffff0000" app:pb_colorNormal="@color/black_54_bold" app:pb_cornerRadius="0.0dip" app:pb_colorProgress="#ffff0000" app:pb_colorComplete="#ffff0000" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
